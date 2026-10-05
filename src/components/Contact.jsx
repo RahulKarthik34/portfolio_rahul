@@ -60,7 +60,7 @@ export default function Contact() {
         {/* Section Header */}
         <div className="mb-14">
           <div className="flex items-center gap-3 text-xs font-mono tracking-widest text-emerald-400 uppercase mb-3">
-            <span>05 / CONTACT</span>
+            <span>04 / CONTACT</span>
             <div className="h-px w-12 bg-emerald-500/40" />
           </div>
           <h2 id="contact-title" className="font-heading text-3xl sm:text-4xl font-bold text-white tracking-tight mb-3">
