@@ -50,6 +50,17 @@ export default function ProjectCaseStudy({ project, onClose }) {
 
         {/* Content Body (Scrollable) */}
         <div className="px-6 py-6 overflow-y-auto space-y-7 focus:outline-none" tabIndex={0}>
+          {/* Project Screenshot / Visual Banner */}
+          {project.screenshot && (
+            <div className="rounded-xl overflow-hidden border border-slate-700/80 shadow-lg bg-slate-900">
+              <img
+                src={project.screenshot}
+                alt={project.name}
+                className="w-full h-auto max-h-80 object-cover object-top"
+              />
+            </div>
+          )}
+
           {/* Tech stack row */}
           <div>
             <span className="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">Technologies Used</span>

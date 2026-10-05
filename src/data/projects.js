@@ -6,30 +6,32 @@ export const LIVE_DEMO_URL = "#PLACEHOLDER_LIVE_DEMO_URL"; // TODO: Replace with
 
 export const projects = [
   {
-    id: "id-card-attendance",
-    name: "Smart ID Card Scan & Attendance System",
-    summary: "Full-stack attendance system with ID scanning, duplicate-prevention, and time-window validation.",
-    tech: ["Python", "MySQL", "REST APIs", "React.js", "Django"],
-    tag: "Full-Stack System",
-    // PLACE PROJECT SCREENSHOT HERE: public/images/projects/id-card-attendance.png
-    screenshot: "/images/projects/id-card-attendance.png",
+    id: "qr-bus-attendance",
+    name: "QR / Barcode Based Bus Attendance System",
+    summary: "A smart and reliable solution for tracking student transit attendance using QR/Barcode scanning with real-time validation.",
+    tech: ["Python", "Django", "Django REST Framework", "MySQL", "JavaScript", "QR/Barcode"],
+    tag: "QR & Bus Attendance",
+    // Project Screenshot
+    screenshot: "/images/projects/bus-attendance.jpg",
     github: GITHUB_URL,
     liveDemo: LIVE_DEMO_URL,
-    overview: "A full-stack attendance management system that automates student identification and attendance logging via ID card scanning, replacing manual roll-call processes.",
-    problem: "Manual attendance tracking is slow, error-prone, and vulnerable to duplicate or fraudulent entries.",
-    solution: "Students scan their ID card, the system validates identity against a MySQL-backed student database, checks time-window and duplicate rules, and logs a verified attendance record via a React frontend and REST API.",
+    overview: "A smart full-stack attendance management system that automates student identification and bus boarding logs via QR & barcode scanning, replacing manual roll calls with real-time validation.",
+    problem: "Manual transit attendance tracking is slow, error-prone, and vulnerable to duplicate scans or fraudulent entries.",
+    solution: "Students scan their QR/barcode, the system validates identity against a MySQL student database, checks time-window and duplicate boarding rules, presents live student preview, and records attendance via Django REST APIs.",
     keyFeatures: [
-      "ID scan → lookup → confirmation flow",
-      "Duplicate-prevention logic",
-      "Time-window validation",
-      "Real-time student info preview"
+      "QR & Barcode Scanning",
+      "Real-Time Validation & Duplicate Prevention",
+      "Role-Based Access Control",
+      "Live Student Preview before Confirmation",
+      "Manual & Automatic Confirmation",
+      "Live Attendance Dashboard & Records"
     ],
     myContributions: [
-      "Designed relational MySQL schema",
-      "Built REST API endpoints for lookup/validation/writes",
-      "Implemented duplicate-prevention and time-based validation",
-      "Built React frontend",
-      "Tested all endpoints with Postman"
+      "Designed relational MySQL schema for student & route tracking",
+      "Built RESTful API endpoints for validation, duplicate checks, and writes",
+      "Implemented QR/barcode decoding and real-time attendance verification",
+      "Created interactive dashboard with daily attendance analytics",
+      "Tested all endpoints thoroughly with Postman"
     ],
     challenge: "Handling duplicate-submission edge cases required validation at both API and DB level, not just frontend — reinforced treating the backend as the source of truth for data integrity."
   },

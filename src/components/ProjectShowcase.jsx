@@ -9,7 +9,7 @@ export default function ProjectShowcase({ projects, onSelectProject }) {
   const showcaseItems = [
     {
       ...projects[0],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+      image: "/images/projects/bus-attendance.jpg",
     },
     {
       ...projects[1],
@@ -21,7 +21,7 @@ export default function ProjectShowcase({ projects, onSelectProject }) {
     },
     {
       ...projects[0],
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1000&auto=format&fit=crop",
+      image: "/images/projects/bus-attendance.jpg",
     },
     {
       ...projects[1],
