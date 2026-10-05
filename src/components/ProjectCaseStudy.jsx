@@ -25,7 +25,7 @@ export default function ProjectCaseStudy({ project, onClose }) {
       aria-labelledby="case-study-title"
     >
       <div
-        className="relative w-full max-w-3xl max-h-[90vh] bg-[#0F172A] border border-slate-700/80 rounded-2xl shadow-2xl overflow-hidden flex flex-col text-slate-200"
+        className="relative w-full max-w-3xl max-h-[90vh] bg-[#0A0A0A] border border-white/10 rounded-2xl shadow-2xl overflow-hidden flex flex-col text-slate-200"
       >
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-5 border-b border-slate-800 bg-slate-900/90">

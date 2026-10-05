@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled
-        ? 'bg-[#0F172A]/90 dark:bg-[#0F172A]/95 backdrop-blur-md border-b border-slate-800/80 shadow-lg shadow-black/10 py-3'
+        ? 'bg-black/85 backdrop-blur-xl border-b border-white/10 shadow-2xl shadow-black/80 py-3'
         : 'bg-transparent py-5'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -88,7 +88,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#0F172A]/98 border-b border-slate-800 px-4 pt-3 pb-6 space-y-2 backdrop-blur-xl animate-in fade-in slide-in-from-top-4 duration-200">
+        <div className="md:hidden bg-black/95 border-b border-white/10 px-4 pt-3 pb-6 space-y-2 backdrop-blur-2xl animate-in fade-in slide-in-from-top-4 duration-200">
           <nav className="flex flex-col space-y-1" aria-label="Mobile Navigation">
             {navLinks.map((link) => {
               const Icon = link.icon;

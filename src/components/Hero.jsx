@@ -18,7 +18,7 @@ export default function Hero() {
     >
       {/* Background AeroShards Atmospheric visual */}
       <AeroShards
-        backgroundColor="#0F172A"
+        backgroundColor="#000000"
         shardColor="#2563EB"
         accentColor="#10B981"
         placement="right"
@@ -167,7 +167,7 @@ export default function Hero() {
                         className="w-full h-full object-cover object-top filter contrast-[1.06] brightness-[1.03] transition-transform duration-300 hover:scale-105"
                         loading="eager"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent opacity-60" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
                       <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white bg-slate-900/85 backdrop-blur-md py-2 px-3.5 rounded-lg border border-slate-700/60 shadow-md">
                         <span className="font-mono text-emerald-400 flex items-center gap-1.5 font-semibold">
                           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
