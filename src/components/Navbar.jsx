@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, FileText, Send, Code, User, Layers } from 'lucide-react';
-import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,9 +59,8 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Right side items: Theme toggle & CTA button */}
+        {/* Right side items: CTA button */}
         <div className="hidden md:flex items-center gap-3">
-          <ThemeToggle />
           <a
             href="#contact"
             className="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-blue-600 hover:bg-blue-500 rounded-lg transition-all duration-200 shadow-md shadow-blue-600/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
@@ -71,9 +69,8 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile controls: Theme toggle & Hamburger */}
+        {/* Mobile controls: Hamburger */}
         <div className="flex md:hidden items-center gap-2">
-          <ThemeToggle />
           <button
             type="button"
             onClick={() => setIsOpen(!isOpen)}
