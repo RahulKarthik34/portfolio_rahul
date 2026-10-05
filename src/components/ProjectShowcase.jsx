@@ -13,7 +13,7 @@ export default function ProjectShowcase({ projects, onSelectProject }) {
     },
     {
       ...projects[1],
-      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1000&auto=format&fit=crop",
+      image: "/images/projects/movie-website.jpg",
     },
     {
       ...projects[2],
@@ -25,7 +25,7 @@ export default function ProjectShowcase({ projects, onSelectProject }) {
     },
     {
       ...projects[1],
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop",
+      image: "/images/projects/movie-website.jpg",
     },
     {
       ...projects[2],

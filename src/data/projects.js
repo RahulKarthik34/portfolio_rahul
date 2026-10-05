@@ -36,32 +36,33 @@ export const projects = [
     challenge: "Handling duplicate-submission edge cases required validation at both API and DB level, not just frontend — reinforced treating the backend as the source of truth for data integrity."
   },
   {
-    id: "dev-os",
-    name: "DEV OS — Interactive Web Operating System",
-    summary: "An interactive OS-style web app simulating a desktop environment in the browser.",
-    tech: ["React.js", "JavaScript", "HTML5", "CSS3"],
-    tag: "Interactive Web App",
-    // PLACE PROJECT SCREENSHOT HERE: public/images/projects/dev-os.png
-    screenshot: "/images/projects/dev-os.png",
+    id: "movie-hub",
+    name: "MovieHub — Modern Movie Website",
+    summary: "A modern movie website to browse movies, view details, search, and explore by genre using real-time API data.",
+    tech: ["React.js", "JavaScript", "REST APIs", "Tailwind CSS", "HTML5"],
+    tag: "Web App & APIs",
+    screenshot: "/images/projects/movie-website.jpg",
     github: GITHUB_URL,
     liveDemo: LIVE_DEMO_URL,
-    overview: "An interactive OS-style web application simulating a desktop operating environment through the browser.",
-    problem: "Standard web portfolios and showcases can feel static; simulating a responsive OS environment tests deep component isolation, state synchronization, and window management in the browser.",
-    solution: "Created a modular browser OS architecture with window dragging, taskbar navigation, application launch lifecycle, and authentic desktop UI controls using pure React and modern CSS.",
+    overview: "A modern movie discovery and entertainment web application (MovieHub) that allows users to explore trending movies, search titles in real time, view trailers and cast details, and manage a personalized watchlist.",
+    problem: "Finding where to watch movies, discovering similar titles by genre, and keeping track of an upcoming watchlist across fragmented platforms can be cumbersome without a unified, responsive interface.",
+    solution: "Built a responsive movie web application powered by real-time movie database APIs, featuring live search, genre filtering, trailer previews, cast profiles, and local storage watchlist management.",
     keyFeatures: [
-      "Boot screen and login interface",
-      "Desktop environment with icon grid",
-      "Multiple simultaneous application windows",
-      "Taskbar navigation and interactive controls"
+      "Browse Latest Movies (trending, popular, top-rated)",
+      "Instant Movie Search with real-time API query",
+      "Genre Filtering (Action, Adventure, Comedy, Drama, Sci-Fi)",
+      "Detailed Info View (trailer, cast, ratings, and similar movies)",
+      "Personalized Watchlist to save favorite movies",
+      "Fully Responsive Design optimized for mobile, tablet, and desktop"
     ],
     myContributions: [
-      "Built reusable React components for desktop elements and app-level functionality",
-      "Implemented JavaScript-based interactions for window management, navigation, buttons, and forms",
-      "Designed responsive layouts with HTML5/CSS3",
-      "Tested and debugged interface workflows",
-      "Maintained version history with Git/GitHub"
+      "Architected component hierarchy in React for movie grids, hero banners, and modal views",
+      "Integrated real-time movie database REST APIs for dynamic search and genre queries",
+      "Implemented responsive mobile and desktop navigation with trailer embed modals",
+      "Built client-side watchlist state synchronization with localStorage",
+      "Styled user interface with modern glassmorphic accents using Tailwind CSS"
     ],
-    challenge: "Managing multiple interactive \"windows\" and state simultaneously required careful component structuring to avoid state conflicts across simulated apps."
+    challenge: "Handling real-time search debouncing and managing responsive layout states across mobile and wide desktop views while keeping API request rates optimized."
   },
   {
     id: "ai-mock-interview",
