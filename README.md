@@ -31,9 +31,9 @@ portfolio/
 │   │   ├── profile/
 │   │   │   └── rahul1.jpeg                       # Rahul Karthik profile photo
 │   │   ├── projects/
-│   │   │   ├── id-card-attendance.png            # Project preview screenshot
-│   │   │   ├── dev-os.png                        # Project preview screenshot
-│   │   │   └── ai-mock-interview.png             # Project preview screenshot
+│   │   │   ├── bus-attendance.jpg                # QR / Barcode Bus Attendance System
+│   │   │   ├── movie-website.jpg                 # MovieHub Modern Movie Website
+│   │   │   └── ai-mock-interview.jpg             # Intervexa 3D Avatar Mock Interview System
 │   │   └── og-image.png                          # Social share preview (1200x630)
 │   └── resume/
 │       └── Rahul-Karthik-Mugachintala-Resume.pdf # Official downloadable PDF resume
