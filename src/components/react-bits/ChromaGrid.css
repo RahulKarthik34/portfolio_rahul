@@ -49,9 +49,10 @@
 }
 
 html:not(.dark) .chroma-card {
-  border: 1px solid rgba(226, 232, 240, 0.9);
-  --spotlight-color: rgba(37, 99, 235, 0.15);
-  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+  background: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  --spotlight-color: rgba(37, 99, 235, 0.12);
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 4px 10px -2px rgba(15, 23, 42, 0.025);
 }
 
 .chroma-card:hover {
@@ -60,7 +61,8 @@ html:not(.dark) .chroma-card {
 }
 
 html:not(.dark) .chroma-card:hover {
-  box-shadow: 0 12px 32px -4px rgba(15, 23, 42, 0.12);
+  border-color: var(--card-border) !important;
+  box-shadow: 0 16px 36px -4px rgba(15, 23, 42, 0.12) !important;
 }
 
 .chroma-card::before {
@@ -144,48 +146,7 @@ html:not(.dark) .chroma-info {
   );
 }
 
-html:not(.dark) .chroma-overlay {
-  backdrop-filter: grayscale(0.85) contrast(0.92);
-  -webkit-backdrop-filter: grayscale(0.85) contrast(0.92);
-}
-
-.chroma-fade {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 4;
-  backdrop-filter: grayscale(1) brightness(0.78);
-  -webkit-backdrop-filter: grayscale(1) brightness(0.78);
-  background: rgba(0, 0, 0, 0.001);
-
-  mask-image: radial-gradient(
-    circle var(--r) at var(--x) var(--y),
-    white 0%,
-    white 15%,
-    rgba(255, 255, 255, 0.9) 30%,
-    rgba(255, 255, 255, 0.78) 45%,
-    rgba(255, 255, 255, 0.65) 60%,
-    rgba(255, 255, 255, 0.5) 75%,
-    rgba(255, 255, 255, 0.32) 88%,
-    transparent 100%
-  );
-  -webkit-mask-image: radial-gradient(
-    circle var(--r) at var(--x) var(--y),
-    white 0%,
-    white 15%,
-    rgba(255, 255, 255, 0.9) 30%,
-    rgba(255, 255, 255, 0.78) 45%,
-    rgba(255, 255, 255, 0.65) 60%,
-    rgba(255, 255, 255, 0.5) 75%,
-    rgba(255, 255, 255, 0.32) 88%,
-    transparent 100%
-  );
-
-  opacity: 1;
-  transition: opacity 0.25s ease;
-}
-
+html:not(.dark) .chroma-overlay,
 html:not(.dark) .chroma-fade {
-  backdrop-filter: grayscale(0.85) contrast(0.92);
-  -webkit-backdrop-filter: grayscale(0.85) contrast(0.92);
+  display: none !important;
 }
