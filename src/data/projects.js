@@ -65,30 +65,31 @@ export const projects = [
   },
   {
     id: "ai-mock-interview",
-    name: "AI Mock Interview Platform",
-    summary: "AI-powered platform for resume analysis, mock interviews, and personalized candidate feedback.",
-    tech: ["React.js", "Python", "Django", "AI/LLM APIs"],
-    tag: "AI & Full-Stack",
-    // PLACE PROJECT SCREENSHOT HERE: public/images/projects/ai-mock-interview.png
-    screenshot: "/images/projects/ai-mock-interview.png",
+    name: "AI Based 3D Avatar Mock Interview System",
+    summary: "An intelligent mock interview platform with a realistic 3D AI avatar, resume-based questions, and AI-powered evaluation.",
+    tech: ["React.js", "Three.js", "Django", "Python", "Ollama", "REST API"],
+    tag: "3D AI & Full-Stack",
+    screenshot: "/images/projects/ai-mock-interview.jpg",
     github: GITHUB_URL,
     liveDemo: LIVE_DEMO_URL,
-    overview: "A full-stack AI-powered platform for resume analysis, mock interview practice, candidate assessment, and personalized feedback.",
+    overview: "An intelligent mock interview platform (Intervexa) featuring an interactive 3D AI avatar, automated resume skill extraction, role-specific question synthesis, and live multi-metric candidate evaluation.",
     problem: "Job seekers often lack realistic, domain-specific interview practice and actionable, prompt feedback tailored directly to their resumes and target roles.",
-    solution: "Engineered an interactive multi-step interview pipeline where candidates upload resumes, get relevant technical/behavioral questions synthesized via LLM APIs, and receive detailed evaluation rubrics upon completion.",
+    solution: "Built a realistic 3D avatar interviewer in Three.js powered by local/cloud LLMs (Ollama) and Django backend, delivering real-time voice/chat interaction, resume parsing, and multi-metric performance rubrics.",
     keyFeatures: [
-      "5+ interactive screens (resume upload, interview setup, question flow, assessment results, feedback)",
-      "AI/LLM-generated technical and behavioral questions",
-      "Personalized feedback generation"
+      "Realistic 3D AI Avatar with natural conversational interface",
+      "Automated Resume Analysis & skill extraction",
+      "AI Generated role-specific & behavioral questions",
+      "Live Evaluation & scoring (Technical, Communication, Problem Solving, Confidence)",
+      "Two Modes: AI Mode (Online) & Pre-built Questions (Offline)",
+      "Comprehensive Interview History & progress tracking"
     ],
     myContributions: [
-      "Built REST API workflows with Python and Django",
-      "Integrated AI/LLM capabilities for question generation and assessment",
-      "Implemented structured workflows for processing candidate data",
-      "Built responsive, reusable React interfaces",
-      "Tested and debugged API endpoints",
-      "Used Git/GitHub for version control"
+      "Built 3D avatar rendering and interactive conversation viewport with React & Three.js",
+      "Architected RESTful backend with Python & Django for session and scoring management",
+      "Integrated Ollama/LLM APIs for real-time contextual question generation and evaluation",
+      "Created responsive interview room UI with live feedback and scoring indicators",
+      "Tested and optimized API pipelines for low-latency conversational feedback"
     ],
-    challenge: "Structuring prompts and workflows to get consistent, useful AI-generated feedback required iterating on how candidate data was formatted before being sent to the LLM API."
+    challenge: "Synchronizing 3D avatar states with LLM streaming responses and structuring evaluation prompts to return reliable, actionable rubric scores required careful prompt engineering and API state handling."
   }
 ];

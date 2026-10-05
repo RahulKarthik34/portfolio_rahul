@@ -17,7 +17,7 @@ export default function ProjectShowcase({ projects, onSelectProject }) {
     },
     {
       ...projects[2],
-      image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop",
+      image: "/images/projects/ai-mock-interview.jpg",
     },
     {
       ...projects[0],
@@ -29,7 +29,7 @@ export default function ProjectShowcase({ projects, onSelectProject }) {
     },
     {
       ...projects[2],
-      image: "https://images.unsplash.com/photo-1677442136019-21780efad99a?q=80&w=1000&auto=format&fit=crop",
+      image: "/images/projects/ai-mock-interview.jpg",
     },
   ];
 
