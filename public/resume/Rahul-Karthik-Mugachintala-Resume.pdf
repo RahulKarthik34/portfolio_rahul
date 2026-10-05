@@ -1,0 +1,45 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 420 >>
+stream
+BT
+/F1 22 Tf
+50 720 Td
+(Rahul Karthik Mugachintala - Resume) Tj
+/F1 12 Tf
+0 -30 Td
+(Full-Stack Developer | Python, JavaScript, React, Node.js, Django, SQL) Tj
+0 -20 Td
+(Location: Nellore, Andhra Pradesh, India | Phone: +91 93929 92273) Tj
+0 -20 Td
+(Email: rahulkarthik017@gmail.com | GitHub: github.com/RahulKarthik34) Tj
+0 -40 Td
+(Please replace this file with your finalized official PDF resume.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000236 00000 n 
+0000000708 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+777
+%%EOF
