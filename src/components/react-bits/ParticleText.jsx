@@ -20,6 +20,15 @@ export default function ParticleText({
   className = "",
 }) {
   const canvasRef = useRef(null);
+  const [themeTick, setThemeTick] = React.useState(0);
+
+  React.useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setThemeTick((t) => t + 1);
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -46,6 +55,12 @@ export default function ParticleText({
     canvas.style.height = `${height}px`;
     ctx.scale(dpr, dpr);
 
+    // Theme awareness: crisp white/blue in dark mode, deep slate/blue in light mode
+    const isDark = document.documentElement.classList.contains('dark');
+    const primaryColor = isDark ? '#FFFFFF' : '#0F172A';
+    const accentBlue = isDark ? '#60A5FA' : '#2563EB';
+    const accentEmerald = isDark ? '#34D399' : '#059669';
+
     // Create offscreen canvas to sample text pixels
     const offCanvas = document.createElement('canvas');
     offCanvas.width = width;
@@ -53,7 +68,7 @@ export default function ParticleText({
     const offCtx = offCanvas.getContext('2d');
     if (!offCtx) return;
 
-    offCtx.fillStyle = '#FFFFFF';
+    offCtx.fillStyle = primaryColor;
     offCtx.font = '800 58px Sora, sans-serif';
     offCtx.textAlign = 'left';
     offCtx.textBaseline = 'middle';
@@ -71,11 +86,11 @@ export default function ParticleText({
         const alpha = imgData[index + 3];
 
         if (alpha > 128) {
-          // Subtle color variation: mostly crisp white with occasional blue/emerald tints
-          let color = '#FFFFFF';
+          // Subtle color variation: mostly primary with occasional blue/emerald tints
+          let color = primaryColor;
           const rand = Math.random();
-          if (rand > 0.85) color = '#60A5FA'; // soft blue
-          else if (rand > 0.7) color = '#34D399'; // soft emerald
+          if (rand > 0.85) color = accentBlue;
+          else if (rand > 0.7) color = accentEmerald;
 
           const startX = x + (Math.random() - 0.5) * scatter * 2;
           const startY = y + (Math.random() - 0.5) * scatter * 2;
@@ -202,7 +217,7 @@ export default function ParticleText({
       canvas.removeEventListener('pointermove', handlePointerMove);
       canvas.removeEventListener('pointerleave', handlePointerLeave);
     };
-  }, [text, particleSize, density, scatter, gatherDuration, pointerRepel, repelRadius, idleDrift, glow]);
+  }, [text, particleSize, density, scatter, gatherDuration, pointerRepel, repelRadius, idleDrift, glow, themeTick]);
 
   return (
     <div className={`particle-text-container ${className}`} aria-hidden="true">

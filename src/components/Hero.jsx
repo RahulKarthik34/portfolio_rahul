@@ -40,7 +40,7 @@ export default function Hero() {
           {/* Left / Content Column (7 cols) */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             {/* Availability Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/80 text-xs font-medium text-slate-300 mb-5 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700/80 text-xs font-medium text-slate-700 dark:text-slate-300 mb-5 shadow-sm">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -68,15 +68,15 @@ export default function Hero() {
             </h1>
 
             {/* Main Tagline */}
-            <h2 className="font-heading text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-white mb-4">
+            <h2 className="font-heading text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-4">
               Hi, I'm Rahul Karthik 👋 —{' '}
-              <span className="bg-gradient-to-r from-blue-400 via-blue-300 to-emerald-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-500 via-blue-400 to-emerald-500 dark:from-blue-400 dark:via-blue-300 dark:to-emerald-400 bg-clip-text text-transparent">
                 Full-Stack Developer | Python & JavaScript
               </span>
             </h2>
 
             {/* Short Bio */}
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mb-8">
+            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mb-8">
               B.Tech IT graduate skilled in full-stack development (React, Node.js, Django) and data tooling (Python, Pandas, SQL). I enjoy building end-to-end systems — from database schema to a working UI — and solving real workflow problems with code.
             </p>
 
@@ -93,36 +93,36 @@ export default function Hero() {
 
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl bg-slate-800/90 hover:bg-slate-750 text-slate-200 hover:text-white border border-slate-700 font-medium text-sm transition-all duration-200 hover:border-slate-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                className="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl bg-white dark:bg-slate-800/90 hover:bg-slate-50 dark:hover:bg-slate-750 text-slate-800 dark:text-slate-200 hover:text-slate-950 dark:hover:text-white border border-slate-300 dark:border-slate-700 font-medium text-sm transition-all duration-200 hover:border-slate-400 dark:hover:border-slate-600 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
               >
-                <Send className="w-4 h-4 text-emerald-400" />
+                <Send className="w-4 h-4 text-emerald-500 dark:text-emerald-400" />
                 Contact Me
               </a>
 
               <a
                 href="#projects"
-                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-slate-400 hover:text-white text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
               >
                 View Projects
-                <ArrowRight className="w-4 h-4 text-blue-400" />
+                <ArrowRight className="w-4 h-4 text-blue-500 dark:text-blue-400" />
               </a>
             </div>
 
             {/* Social Links & Location Quick Bar */}
-            <div className="pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-4 text-sm text-slate-400">
-              <span className="inline-flex items-center gap-1.5 text-xs text-slate-400 font-mono">
-                <MapPin className="w-3.5 h-3.5 text-emerald-400" />
+            <div className="pt-6 border-t border-slate-200 dark:border-slate-800/80 flex flex-wrap items-center gap-4 text-sm text-slate-600 dark:text-slate-400">
+              <span className="inline-flex items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400 font-mono">
+                <MapPin className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400" />
                 Nellore, Andhra Pradesh, India
               </span>
 
-              <div className="h-3 w-px bg-slate-800 hidden sm:block" />
+              <div className="h-3 w-px bg-slate-200 dark:bg-slate-800 hidden sm:block" />
 
               <div className="flex items-center gap-2">
                 <a
                   href="https://linkedin.com/in/rahul-karthik-mugachintala"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                  className="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
                   aria-label="LinkedIn Profile"
                 >
                   <LinkedinIcon className="w-4 h-4" />
@@ -132,7 +132,7 @@ export default function Hero() {
                   href="https://github.com/RahulKarthik34"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                  className="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
                   aria-label="GitHub Profile"
                 >
                   <GithubIcon className="w-4 h-4" />
@@ -140,7 +140,7 @@ export default function Hero() {
 
                 <a
                   href="mailto:rahulkarthik017@gmail.com"
-                  className="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                  className="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
                   aria-label="Send Email"
                 >
                   <Mail className="w-4 h-4" />
@@ -229,18 +229,18 @@ export default function Hero() {
 
               {/* Interactive Cue Tag */}
               <div className="absolute bottom-2 left-1/2 -translate-x-1/2 pointer-events-none z-20">
-                <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-slate-900/90 text-xs font-mono text-emerald-400 border border-slate-700/80 shadow-lg backdrop-blur-md whitespace-nowrap">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/90 dark:bg-slate-900/90 text-xs font-mono text-emerald-600 dark:text-emerald-400 border border-slate-200 dark:border-slate-700/80 shadow-lg backdrop-blur-md whitespace-nowrap">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                   Interactive 3D ID Badge • Hover, Scroll to Jump & Drag
                 </span>
               </div>
             </div>
 
             {/* Quick Developer Meta Row below badge */}
-            <div className="w-full max-w-md mt-2 px-4 py-2.5 rounded-xl bg-slate-900/85 border border-slate-800 flex items-center justify-between text-xs text-slate-300 shadow-md">
-              <span className="font-mono text-blue-400 font-medium">React · Node · Python · SQL</span>
-              <span className="text-slate-600">|</span>
-              <span className="text-emerald-400 font-mono font-medium">Full-Stack Engineer</span>
+            <div className="w-full max-w-md mt-2 px-4 py-2.5 rounded-xl bg-white/90 dark:bg-slate-900/85 border border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs text-slate-700 dark:text-slate-300 shadow-sm">
+              <span className="font-mono text-blue-600 dark:text-blue-400 font-medium">React · Node · Python · SQL</span>
+              <span className="text-slate-300 dark:text-slate-600">|</span>
+              <span className="text-emerald-600 dark:text-emerald-400 font-mono font-medium">Full-Stack Engineer</span>
             </div>
           </div>
 
