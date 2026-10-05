@@ -92,5 +92,34 @@ export const projects = [
       "Tested and optimized API pipelines for low-latency conversational feedback"
     ],
     challenge: "Synchronizing 3D avatar states with LLM streaming responses and structuring evaluation prompts to return reliable, actionable rubric scores required careful prompt engineering and API state handling."
+  },
+  {
+    id: "techblog-ai",
+    name: "TechBlog AI — Blog with AI Automation",
+    summary: "An AI-powered blog automation platform delivering well-researched technical articles with admin review workflows and multi-category reader experience.",
+    tech: ["Python", "Django", "Django REST Framework", "React.js", "AI/LLM APIs", "Tailwind CSS"],
+    tag: "AI & Content Automation",
+    screenshot: "/images/projects/techblog-ai.jpg",
+    github: GITHUB_URL,
+    liveDemo: LIVE_DEMO_URL,
+    overview: "An automated technical blogging platform (TechBlog AI) that pairs AI-driven article generation with an editorial review pipeline, allowing administrators to review, edit, approve, or reject AI-generated posts before automatic publishing.",
+    problem: "Consistent technical content publishing demands extensive research, drafting, and editorial review. Without structured automation and review checkpoints, scaling content quality remains bottlenecked.",
+    solution: "Built an end-to-end publishing pipeline: AI synthesizes well-researched drafts with category tags, administrators inspect and approve articles via a dedicated review dashboard, and approved posts automatically deploy to the public reader UI with reading time and table of contents.",
+    keyFeatures: [
+      "AI Article Generation (structured, well-researched posts)",
+      "Admin Review Dashboard (Pending, Edit, Approve, Reject actions)",
+      "Multi-Category Classification (Technology, Programming, AI & Tools, Career, Productivity)",
+      "Automated Publishing Lifecycle with status tracking",
+      "Reader Experience (Estimated read time, Table of Contents, Social Sharing)",
+      "Dark & Light Mode Toggle for optimal reading comfort"
+    ],
+    myContributions: [
+      "Engineered Django REST Framework API for article generation, review stages, and status transitions",
+      "Integrated LLM APIs for automated outline structuring, content drafting, and SEO meta extraction",
+      "Built React admin dashboard with pending article queue, live preview, and approval workflows",
+      "Developed reader-facing blog interface with category filters, dynamic table of contents, and search",
+      "Implemented database schema in MySQL/PostgreSQL for authors, categories, articles, and review logs"
+    ],
+    challenge: "Balancing AI generation speed with editorial quality control required designing a strict multi-state review pipeline (Draft -> Pending Approval -> Published / Rejected) with rollback and revision tracking."
   }
 ];

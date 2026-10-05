@@ -20,6 +20,10 @@ export default function ProjectShowcase({ projects, onSelectProject }) {
       image: "/images/projects/ai-mock-interview.jpg",
     },
     {
+      ...projects[3],
+      image: "/images/projects/techblog-ai.jpg",
+    },
+    {
       ...projects[0],
       image: "/images/projects/bus-attendance.jpg",
     },
@@ -30,6 +34,10 @@ export default function ProjectShowcase({ projects, onSelectProject }) {
     {
       ...projects[2],
       image: "/images/projects/ai-mock-interview.jpg",
+    },
+    {
+      ...projects[3],
+      image: "/images/projects/techblog-ai.jpg",
     },
   ];
 
