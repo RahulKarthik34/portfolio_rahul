@@ -12,9 +12,9 @@ export default function About() {
     },
     {
       title: "Backend & APIs",
-      description: "Designing RESTful services, routing, validation middleware, and business logic with Node.js/Express and Django.",
+      description: "Designing RESTful services, routing, validation middleware, and business logic with Python, Django, and Django REST Framework.",
       icon: Server,
-      highlight: "Node.js · Express · Django"
+      highlight: "Python · Django · REST APIs"
     },
     {
       title: "Database Design",
@@ -23,10 +23,10 @@ export default function About() {
       highlight: "MySQL · MongoDB"
     },
     {
-      title: "Python & Data",
-      description: "Scripting workflow automation, processing datasets with Pandas & NumPy, and querying data systems with structured SQL.",
+      title: "Python & Architecture",
+      description: "Writing clean object-oriented Python, building robust API integrations, and querying data systems with structured SQL.",
       icon: Terminal,
-      highlight: "Python · Pandas · SQL"
+      highlight: "Python · SQL · OOP"
     }
   ];
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Server, Database, Wrench, Terminal, Code2, Sparkles } from 'lucide-react';
+import { Layout, Server, Database, Wrench, Code2, Sparkles } from 'lucide-react';
 import ChromaGrid from './react-bits/ChromaGrid';
 
 export default function Skills() {
@@ -16,35 +16,28 @@ export default function Skills() {
       icon: Server,
       borderColor: "#6366F1",
       gradient: "linear-gradient(145deg, rgba(99, 102, 241, 0.22), rgba(15, 23, 42, 0.95))",
-      skills: ["Python", "Django", "Node.js", "Express.js", "RESTful APIs", "JSON"],
+      skills: ["Python", "Django", "Django REST Framework", "RESTful APIs", "JSON", "CRUD"],
     },
     {
       category: "Database Systems",
       icon: Database,
       borderColor: "#10B981",
       gradient: "linear-gradient(145deg, rgba(16, 185, 129, 0.22), rgba(15, 23, 42, 0.95))",
-      skills: ["MySQL", "MongoDB", "Schema Modeling", "Relational Integrity", "CRUD"],
+      skills: ["MySQL", "MongoDB", "Schema Modeling", "Relational Integrity", "CRUD Operations", "SQL"],
     },
     {
       category: "Cloud & Dev Tools",
       icon: Wrench,
       borderColor: "#A855F7",
       gradient: "linear-gradient(145deg, rgba(168, 85, 247, 0.22), rgba(15, 23, 42, 0.95))",
-      skills: ["AWS (fundamentals)", "Git", "GitHub", "Postman", "VS Code", "Linux CLI"],
-    },
-    {
-      category: "Data Tooling & Analytics",
-      icon: Terminal,
-      borderColor: "#F59E0B",
-      gradient: "linear-gradient(145deg, rgba(245, 158, 11, 0.22), rgba(15, 23, 42, 0.95))",
-      skills: ["Pandas", "NumPy", "Data Cleaning", "SQL Queries", "Workflow Automation"],
+      skills: ["AWS (fundamentals)", "Git", "GitHub", "Postman", "VS Code", "Vercel / Netlify"],
     },
     {
       category: "Core Computer Science",
       icon: Code2,
       borderColor: "#06B6D4",
       gradient: "linear-gradient(145deg, rgba(6, 182, 212, 0.22), rgba(15, 23, 42, 0.95))",
-      skills: ["Object-Oriented Programming (OOP)", "Data Structures", "Algorithms", "Clean Code"],
+      skills: ["Object-Oriented Programming (OOP)", "Data Structures", "Algorithms", "Clean Code Architecture"],
     },
   ];
 
@@ -128,7 +121,7 @@ export default function Skills() {
             Technical Proficiencies
           </h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl text-sm sm:text-base">
-            Hover and move across the interactive chroma spotlight grid to explore my stack across frontend, backend, databases, cloud, and data engineering.
+            Hover and move across the interactive chroma spotlight grid to explore my technical stack across frontend, backend, databases, cloud, and core computer science.
           </p>
         </div>
 

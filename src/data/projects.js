@@ -9,7 +9,7 @@ export const projects = [
     id: "id-card-attendance",
     name: "Smart ID Card Scan & Attendance System",
     summary: "Full-stack attendance system with ID scanning, duplicate-prevention, and time-window validation.",
-    tech: ["Python", "MySQL", "REST APIs", "React.js", "Node.js", "Express.js"],
+    tech: ["Python", "MySQL", "REST APIs", "React.js", "Django"],
     tag: "Full-Stack System",
     // PLACE PROJECT SCREENSHOT HERE: public/images/projects/id-card-attendance.png
     screenshot: "/images/projects/id-card-attendance.png",
@@ -65,7 +65,7 @@ export const projects = [
     id: "ai-mock-interview",
     name: "AI Mock Interview Platform",
     summary: "AI-powered platform for resume analysis, mock interviews, and personalized candidate feedback.",
-    tech: ["React.js", "Node.js", "Express.js", "AI/LLM APIs"],
+    tech: ["React.js", "Python", "Django", "AI/LLM APIs"],
     tag: "AI & Full-Stack",
     // PLACE PROJECT SCREENSHOT HERE: public/images/projects/ai-mock-interview.png
     screenshot: "/images/projects/ai-mock-interview.png",
@@ -80,7 +80,7 @@ export const projects = [
       "Personalized feedback generation"
     ],
     myContributions: [
-      "Built REST API workflows with Node.js/Express.js",
+      "Built REST API workflows with Python and Django",
       "Integrated AI/LLM capabilities for question generation and assessment",
       "Implemented structured workflows for processing candidate data",
       "Built responsive, reusable React interfaces",

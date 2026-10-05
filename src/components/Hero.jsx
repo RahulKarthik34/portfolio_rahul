@@ -77,7 +77,7 @@ export default function Hero() {
 
             {/* Short Bio */}
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mb-8">
-              B.Tech IT graduate skilled in full-stack development (React, Node.js, Django) and data tooling (Python, Pandas, SQL). I enjoy building end-to-end systems — from database schema to a working UI — and solving real workflow problems with code.
+              B.Tech IT graduate skilled in full-stack development (React, Python, Django) and database systems (SQL, MySQL, MongoDB). I enjoy building end-to-end systems — from database schema to a working UI — and solving real workflow problems with code.
             </p>
 
             {/* Action CTAs */}

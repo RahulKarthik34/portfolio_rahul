@@ -154,7 +154,7 @@ const PARTICLE_DRIFT_SOURCE = `<!doctype html>
             let beams = [];
             
             // Customized character pool with Rahul Karthik's details: Name, College (NBKRIST), and Tech Skills
-            const chars = 'RAHUL KARTHIK NBKRIST REACT NODE PYTHON SQL JS DJANGO AWS GIT MYSQL PANDAS'.replace(/\\s+/g, '').split('');
+            const chars = 'RAHUL KARTHIK NBKRIST REACT PYTHON SQL JS DJANGO AWS GIT MYSQL API'.replace(/\\s+/g, '').split('');
             let mouse = { x: -1000, y: -1000 };
 
             function resize() {
